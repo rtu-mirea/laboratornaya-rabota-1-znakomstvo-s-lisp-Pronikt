@@ -1,5 +1,4 @@
-(defun fib (n lst) (cond ((= n 1) lst)
-                          ((= n 2) lst)
-                          (t (fib_ (- n 1) (cons (+ (car lst) (cadr lst)) lst)))))
-;(fib количество чисел фибоначи ( исходный список из двух чисел задающий два числа Фибоначи для последующих рекурсий))
-; Пример: (fib 10 (1 1)) - выведет 10 чисел Фибоначи
+(defun fibonacci (n &optional (a 0) (b 1) (acc ()))
+  (if (zerop n)
+      (nreverse acc)
+      (fibonacci (1- n) b (+ a b) (cons a acc))))
