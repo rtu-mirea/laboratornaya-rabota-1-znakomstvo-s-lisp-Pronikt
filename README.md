@@ -1,2 +1,2 @@
-# laboratornaya-rabota-1-znakomstvo-s-lisp-Pronikt
-laboratornaya-rabota-1-znakomstvo-s-lisp-Pronikt created by GitHub Classroom
+# Лабораторная работа 1 
+laboratornaya-rabota-1-znakomstvo-s-lisp-Pronikt-Кирьяков-Александр created by GitHub Classroom
