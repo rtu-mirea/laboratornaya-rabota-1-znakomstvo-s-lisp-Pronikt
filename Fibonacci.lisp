@@ -1,4 +1,8 @@
-(defun fibonacci (n &optional (a 0) (b 1) (acc ()))
-  (if (zerop n)
-      (nreverse acc)
-      (fibonacci (1- n) b (+ a b) (cons a acc))))
+(defun fibonacci (n) 
+    (if (< n 3) 
+        1 
+        (+ (fibonacci (- n 1)) (fibonacci (- n 2))) )) 
+
+(loop for i from 1 to 16 
+     do (format t "~D, " (fibonacci i)) 
+     finally (format t "...~%"))
